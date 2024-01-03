@@ -1,0 +1,119 @@
+.App {
+  text-align: center;
+}
+
+
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.grocery-logo {
+  height: 10px; /* Adjust the height as needed */
+  width: auto; /* Maintain aspect ratio */
+  margin-right: auto; 
+}
+
+/* app.css */
+
+/* Change .header to nav.header in App.css */
+nav.header {
+  display: flex;
+  justify-content: space-around;
+  border: 1px solid black;
+  margin: 10px;
+  background-image: url('https://media.istockphoto.com/id/1345114442/photo/brown-paper-bag-with-groceries-on-green-background.jpg?s=612x612&w=0&k=20&c=jBnw8aGu_wND71C8W9mevp1Ocn_qCK0c1GiHqjR_450=');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+.Body{
+  border: 2px solid black;
+}
+nav>ul{
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+}
+nav>ul>li{
+  list-style-type: none;
+  margin:5px;
+}
+
+.search-bar{
+  margin:10px;
+  align-self: center;
+  margin-left: 10px;
+}
+.search-bar>button{
+  margin-left: 10px;
+}
+
+.Item{
+  margin: 10px;
+  width: 350px;
+  height: 620px;
+  padding: 10px;
+  border: 1px solid transparent;
+}
+
+.Item:hover{
+  border: 2px solid black;
+  cursor: pointer;
+}
+
+.Item>img{
+  width:100%;
+  height:70%;
+  
+}
+
+.Item-details{
+  
+  justify-content: space-between;
+}
+
+
+.Item-details h3.offer{
+  color: red; /* Set the color to red for the "25% offer" text */
+}
+
+.Items-container{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+footer{
+  border: 2px solid black;
+  height: 100px;
+  margin: 10px;
+  padding: 10px;
+}
